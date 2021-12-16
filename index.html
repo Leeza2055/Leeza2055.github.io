@@ -1,172 +1,76 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>My Portfolio</title>
-        <style>
-        * {
-            box-sizing: border-box;
-            }
-
-        .row {
-            display: flex;
-            }
-
-        
-        .column {
-            flex: 50%;
-            padding: 10px;
-            height: 300px; 
-            }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 100%;
-            border: 0px solid #ddd;
-        }
-          
-        th,
-        td {
-            text-align: left;
-            padding: 8px;
-        }
-  
-        /* width */        
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-  
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-  
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-  
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-          
-        .scroll {
-            display: block;
-            border: 0px solid red;
-            padding: 5px;
-            margin-top: 5px;
-            width: 100%;
-            height: 500px;
-            overflow-y: scroll;
-        }
-        body{
-            background-color:antiquewhite;
-        }
-        #loading {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 1;
-            margin: -76px 0 0 -76px;
-            border: 5px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 5px solid #3498db;
-            width: 50px;
-            height: 50px;
-            -webkit-animation: spin 2s linear infinite; /* Safari */
-            animation: spin 2s linear infinite;
-            align-self: center;
-            }
-
-            /* Safari */
-            @-webkit-keyframes spin {
-            0% { -webkit-transform: rotate(0deg); }
-            100% { -webkit-transform: rotate(360deg); }
-            }
-
-            @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-            }
-            #image{
-                border-radius:50%;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="loading">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Leeza Shrestha</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- bootstrap cdn-->
+    <link rel="stylesheet" href=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Leeza</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">EXPERIENCE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">EDUCATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row" id="mainContainer" hidden>
-            <div class="column">
-                <img id="image" 
-                    height="200"
-                    
-                    width="200">
-                <h2  id="name"></h2>
-                <p style="font-size:12px; padding-top:-30px;" id="login"></p>
-                <p   id="bio"></p>
-                <h5 id="followers"></h5>
-                <h5 id="following"></h5>
-                <p>Check me on <button><a target="_blank" id="githublink">Github</a></button></p>
-            </div>
-            <div class="column">
-                <div class="scroll">
-                    <h2 id="count"></h2><hr>
-                    <ul id='myrepos'>
+      </nav>
+      <header class="header" id="home">
+          <div class="container">
+              <div class="description text-center">
+                  <span>Hey I am</span>
+                  <h1>Leeza Shrestha</h1>
+                  <!-- <a href="Leeza-Resume.pdf" download="file" rel="noopener noreferrer" target="_blank">
+                    Download Resume
+                  </a> -->
+                  <button>
+                    <a href="Leeza-Resume.pdf" target="_blank" download>Click to Download!</a>
+                  </button>
+              </div>
+          </div>
+      </header>
 
-                    </ul>
 
-                </div>
-               
-            </div>
-        </div>
-        
-        <script>
-            fetch("https://api.github.com/users/Leeza2055")
-                .then(response => response.json())
-                .then(function(data){
-                    console.log(data)
-                    let followersCount = data['followers']
-                    let count = data['public_repos']
-                    let projects = `My projects (${count})`
-                    let followingCount = data['following']
-                    let followers = `I have been followed by ${followersCount} awesome people on Github`
-                    let following = `I have been following  ${followingCount} awesome people on Github`
-                    document.getElementById('image').src = data['avatar_url']
-                    document.getElementById('name').textContent = data['name']
-                    document.getElementById('login').textContent = data['login']
-
-                    document.getElementById('bio').textContent = data['bio']
-                    document.getElementById('count').textContent = projects
-
-                    document.getElementById('followers').textContent = followers
-                    document.getElementById('following').textContent = following
-                    
-                    document.getElementById('githublink').href = data['html_url']
-                    document.getElementById('myrepos').href = data['repos_url']
-                    document.getElementById('mainContainer').hidden = false
-                    document.getElementById('loading').hidden = true
-                    
-                })
-        </script>
-        <script>
-            fetch("https://api.github.com/users/Leeza2055/repos")
-            .then(response => response.json())
-                .then(function(data){
-                    // console.log(data)
-                    for (let i in data){
-                        let ul = document.getElementById('myrepos');
-                        let li = document.createElement('li');
-                        li.innerHTML = (`
-                        <p><strong>Repo:</strong> ${data[i].name}</p>
-                        <p><strong>Description:</strong> ${data[i].description}</p>
-                        <p><strong>URL:</strong><a target="_blank" href="${data[i].html_url}">${data[i].html_url}</a></p>
-                        `);
-                        ul.appendChild(li);
-
-                    }
-                    
-                })
-            
-        </script>
-    </body>
+    
+</body>
 </html>
