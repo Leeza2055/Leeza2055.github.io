@@ -1,76 +1,233 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Leeza Shrestha</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- bootstrap cdn-->
-    <link rel="stylesheet" href=
-        "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src=
-        "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
-    <script src=
-        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
-    </script>
-    <script src=
-        "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-    </script>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <script src='js/main.js'></script>
-    
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>Leeza Shrestha</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Leeza</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experience">EXPERIENCE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#education">EDUCATION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">SKILLS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACT</a>
-              </li>
-            </ul>
-          </div>
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<a class="navbar-brand" href="index.html">Leeza Shrestha</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#leezaportfoliocontent" aria-controls="leezaportfoliocontent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="icon-bar top-bar"></span>
+			<span class="icon-bar middle-bar"></span>
+			<span class="icon-bar bottom-bar"></span>	
+		</button>
+		<div class="collapse navbar-collapse" id="leezaportfoliocontent">
+			<ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+		<li class="nav-item">
+			<a class="nav-link" href="#skills">SKILLS</a>
+		</li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">EDUCATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+		</div>
+	</nav>
+	
+	<div class="about" id="about">
+		
+	<div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-12">
+			<img src="images/4.jpg" class="img-fluid">
+			
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12 desc" >
+      <h1>About Me</h1>
+			
+			<p>I'm currently studying Bsc CSIT at Academia International College in 8th semester. I have basic knowledge of HTML, CSS, PYTHON, DJANGO. I'm honest, hardworking and self-motivated girl with positive attitude towards my career & my life. I'm focused on crafting great web experiences. I have always been a team player. 
+			</p>
+			<div class="row r2 text-center">
+				<a href="Leeza-Resume.pdf" target="_blank" download><button class="btn-secondary">Check my Resume</button></a>				
+				</div>
+		</div>
+		
+	</div>
+	</div>
+	<div class="skills" id='skills'>
+		<div class="container">
+				<h1 class="text-center">SKILLS</h1>
+				<div class="row skillsrow">
+					<div class="col-md-2 skills-icon text-center">
+					<i class="fab fa-html5"></i>
+						<h4>HTML5</h4>
+					</div>
+					<div class="col-md-2 skills-icon text-center">
+					<i class="fab fa-css3-alt"></i>
+						<h4>CSS3 </h4>
+					</div>
+          			<div class="col-md-2 skills-icon text-center">
+            		<i class="fab fa-js"></i>
+              			<h4>JS </h4>
+            		</div>
+          			<div class="col-md-2 skills-icon text-center">
+            		<i class="fab fa-bootstrap"></i>
+              			<h4>Bootstrap </h4>
+            		</div>
+					<div class="col-md-2 skills-icon text-center">
+					<i class="fab fa-python"></i>
+						<h4>Python</h4>
+					</div>
+					<div class="col-md-2 skills-icon text-center">
+					<i class="fab fa-github"></i>
+						<h4>Github</h4>
+					</div>
+					</div>	
+			</div>
+	</div>
+
+  <div class="experience" id="experience">
+		<h1 class="text-center">Experience</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center" >
+          <h4>Cloudfactory Data Entry Specialist</h4>
+          <p>2017-present</p>
+          <p>Working on Expensify Project entering customer's expenses data</p>
+          <h4>Python/Django Internship at Sarobar Technology Pvt. Ltd.</h4>
+          <p>Feb-May 2021</p>
+          <p>Completed 3 months internship working on Ecommerce Project</p>
+        </div> 
+      </div>
+    </div>
+  </div>
+
+	
+	<div class="education" id="education">
+		<h1 class="text-center">Education</h1>
+		<div class="container">
+			<div class="row">
+			<div class="col-md-6">
+			<img src="images/11.jpg" class="img-responsive center-block">
+			</div>
+			<div class="col-md-6 profile-col text-center">
+				<i class="fas fa-university"></i>
+				<h3>EDUCATION</h3>
+				<h4>B.Sc CSIT</h4>
+				<p>Academia International College</p>
+				<h4>+2 HSEB</h4>
+				<p>MOLIHSS-69.10% </p>
+				<h4>SLC</h4>
+				<p>DBHSS-87.75%</p>
+				</div>
+			</div>	
+			</div>
+		</div>
+
+    <div class="projects" id="projects">
+      <h2 class="projects-title text-center">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="./images/b.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-details">
+            Expense Tracker calculates the surplus or deficit of money according to the income and expense in particular date range.
+          </p>
+          <a href="https://gitlab.com/leezashrestha999/planner-project" target="_blank" class="project-link">Check it Out</a>
         </div>
-      </nav>
-      <header class="header" id="home">
-          <div class="container">
-              <div class="description text-center">
-                  <span>Hey I am</span>
-                  <h1>Leeza Shrestha</h1>
-                  <!-- <a href="Leeza-Resume.pdf" download="file" rel="noopener noreferrer" target="_blank">
-                    Download Resume
-                  </a> -->
-                  <button>
-                    <a href="Leeza-Resume.pdf" target="_blank" download>Click to Download!</a>
-                  </button>
-              </div>
-          </div>
-      </header>
+        <div class="project-container project-card">
+          <img
+            src="./images/a.png"
+            alt="home-tuition"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Home Tuition System</h3>
+          <p class="project-details">
+            Home Tuition System is an online platform for students and tutors to get the service of home tuition.
+          </p>
+          <a href="https://github.com/Leeza2055/newtuitionsystem" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="./images/c.jpg"
+            alt="covid-case"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Covid Case</h3>
+          <p class="project-details">
+            This project gives the number of case, number of deaths, number of recovered persons according to date and country name.
+          </p>
+          <a href="https://github.com/samit22/ChatBot" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </div>
+
+		<div class="contact" id="contact">
+		<div class="container">
+			<form>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12">
+						<h1>Get in Touch</h1>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-12 right">
+						<div class="form-group">
+							<input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com" name="email">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control form-control-lg">
+								
+							</textarea>
+							
+						</div>
+						<input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+
+		<div class="socialMediaLinks">
+			<a href="https://www.facebook.com/LeezaShrestha25" class="fab fa-facebook-f" target="_blank"></a>
+			<a href="https://www.instagram.com/leeza_shrestha/" class="fab fa-instagram" target="_blank"></a>
+			<a href="https://github.com/Leeza2055" class="fab fa-github" target="_blank"></i></a>
+			<a href="https://www.linkedin.com/in/leeza-shrestha/" class="fab fa-linkedin-in" target="_blank"></i></a>
+		</div>
 
 
-    
-</body>
+		<i class="scroll-up" id="scroll-up">
+			<img
+				src="./images/icons8-upward-arrow.gif"
+				class="socicon up-arrow"
+				alt="scroll-up"/>
+		</i>
+		
+		<div class="footer">
+		<p>&copy Leeza Shrestha 2021</p>
+		</footer>
+
+		
+
+
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body> 
 </html>
